@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NinjaKN premium Bikes</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(220, 218, 217);
+            color: rgb(188, 41, 41);
+        }
+        header{
+            background-color: #0f0f0f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            background-image:url(bi.webp);
+            background-size: cover;
+            background-position: center;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1{
+            font-size: 3rem;
+            background: rgb(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        nav{
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            gap:20px;
+            padding: 15px;
+
+        }
+        nav a{
+            color: grey;
+            text-decoration:solid;
+            font-weight: bold;
+            transition: color 0.5s;
+        }
+        nav a:hover{
+            color:#00bfff;
+        }
+        section{
+         padding: 60px;
+        }
+        .specs{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       background-color: #f4f4f4;
+
+        }
+        .specs-1{
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 8px rgb(0, 0, 0,0.7);
+            margin: 15px;
+            padding: 20px;
+            width:200px;
+
+        }
+        .gallery{
+            display: flex;
+            justify-content: center;
+            gap:20px;
+        }
+        .specs-1:hover{
+            transform: scale(1.2);
+        }
+        .gallery img{
+            width:200px;
+            height: auto;
+            border-radius: 10px;
+
+        }
+        .gallery img:hover{
+            transform:scale(1.2);
+
+        }
+        .video{
+            display: flex;
+            justify-content: center;
+        }
+        iframe{
+            width: 75%;
+            height: 300px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#bike">Bikes</a>
+        <a href="#about">About</a>
+        <a href="#video">Video</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <head>
+        <h1>Welcome to NinjaKN premium showroom</h1>
+    </head>
+    <section id="specs"class="specs">
+       <div class="specs-1">
+         <h3> NinjakN 1500R</h3>
+        <p>Engine:800cc</p>
+        <p>Horsepower:150HP</p>
+    </div>
+        <div class="specs-1">
+            <h3> NinjaKN Crusier</h3>
+            <p>Engine:800cc</p>
+        <p>Horsepower:90HP</p>
+        <p>Top speed:220 km/hr</p>
+        </div>
+        <div class="specs-1">
+            <h3>NinjaKN </h3>
+            <p>Engine:650cc</p>
+            <p>Horsepower:700HP</p>
+            <P>Top Speed:180 km/hr</P>
+        </div>
+    </section>
+    <section id="bike" class="gallery">
+        <img src="1.webp" alt="bike 1">
+        <img src="2.webp" alt="bike 2">
+        <img src="3.jpeg" alt="bike 3">
+        <img src="4.webp" alt="bike 4">
+    </section>
+    <section id ="video" class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/t4uLKI6hLSU?si=VoYEInh8bJKA7EPJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+</body>
+</html>
